@@ -29,7 +29,7 @@
                                 <td class="px-6 py-5 text-left">{{\Carbon\Carbon::parse($permission->created_at)->format('d M, Y')}}</td>
                                 <td class="px-6 py-5 text-center">
                                     <a href="{{route('permission.edit',$permission->id)}}" class="bg-slate-700 text-sm rounded-md px-5 py-3 text-white hover:bg-slate-600 focus:ring focus:ring-slate-300 hover-:bg-slate-600">Edit</a>
-                                    <a  href="{{route('permission.delete',$permission->id)}}" class="bg-red-700 text-sm rounded-md px-5 py-3 text-white hover:bg-slate-600 focus:ring focus:ring-slate-300 hover-:bg-red-700">Delete</a>
+                                    <a  href="{{route('permission.delete',$permission->id)}}" id="delete" class="bg-red-700 text-sm rounded-md px-5 py-3 text-white hover:bg-slate-600 focus:ring focus:ring-slate-300 hover-:bg-red-700">Delete</a>
                                 </td>
                             </tr>
                        @endforeach
